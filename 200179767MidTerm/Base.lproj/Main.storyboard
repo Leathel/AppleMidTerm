@@ -122,7 +122,7 @@
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="C2q-S5-cbl">
                                 <rect key="frame" x="-47" y="-14" width="94" height="29"/>
                                 <connections>
-                                    <action selector="incrementClicked:" destination="BYZ-38-t0r" eventType="valueChanged" id="5WZ-f8-CZ8"/>
+                                    <action selector="item1Increment:" destination="BYZ-38-t0r" eventType="valueChanged" id="75r-wa-WNu"/>
                                 </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyv-ke-LP0">
@@ -134,13 +134,13 @@
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="c97-Ia-SYz">
                                 <rect key="frame" x="-47" y="-14" width="94" height="29"/>
                                 <connections>
-                                    <action selector="increment3clicked:" destination="BYZ-38-t0r" eventType="valueChanged" id="aYG-h9-hIe"/>
+                                    <action selector="item3Increment:" destination="BYZ-38-t0r" eventType="valueChanged" id="1tH-4g-VR5"/>
                                 </connections>
                             </stepper>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="7x9-6S-e3E">
                                 <rect key="frame" x="-47" y="-14" width="94" height="29"/>
                                 <connections>
-                                    <action selector="increment2Clicked:" destination="BYZ-38-t0r" eventType="valueChanged" id="Vbk-CY-RXK"/>
+                                    <action selector="item2Increment:" destination="BYZ-38-t0r" eventType="valueChanged" id="Gqd-0T-QMC"/>
                                 </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4N-eu-tRo">
@@ -152,13 +152,7 @@
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="8uH-G6-v5s">
                                 <rect key="frame" x="-47" y="-14" width="94" height="29"/>
                                 <connections>
-                                    <action selector="increment4Clicked:" destination="BYZ-38-t0r" eventType="valueChanged" id="vFc-ld-m2i"/>
-                                </connections>
-                            </stepper>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="2bN-AB-pf5">
-                                <rect key="frame" x="-47" y="-14" width="94" height="29"/>
-                                <connections>
-                                    <action selector="increment5Clicked:" destination="BYZ-38-t0r" eventType="valueChanged" id="FfZ-Ur-2F6"/>
+                                    <action selector="item4Increment:" destination="BYZ-38-t0r" eventType="valueChanged" id="aIF-v5-vrg"/>
                                 </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avo-oT-skv">
@@ -296,6 +290,12 @@ X19fXwM
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="2bN-AB-pf5">
+                                <rect key="frame" x="-47" y="-14" width="94" height="29"/>
+                                <connections>
+                                    <action selector="item5Increment:" destination="BYZ-38-t0r" eventType="valueChanged" id="9nH-wY-SQg"/>
+                                </connections>
+                            </stepper>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -398,7 +398,6 @@ X19fXwM
                                 <exclude reference="7x9-6S-e3E"/>
                                 <exclude reference="I4N-eu-tRo"/>
                                 <exclude reference="8uH-G6-v5s"/>
-                                <exclude reference="2bN-AB-pf5"/>
                                 <exclude reference="Avo-oT-skv"/>
                                 <exclude reference="Jxl-T0-QU5"/>
                                 <exclude reference="0zR-k2-8lh"/>
@@ -410,6 +409,7 @@ X19fXwM
                                 <exclude reference="nGD-Pm-67W"/>
                                 <exclude reference="j6v-Fy-Bqb"/>
                                 <exclude reference="LgL-Wb-Mxp"/>
+                                <exclude reference="2bN-AB-pf5"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="AQ3-uD-1gI"/>
@@ -512,7 +512,6 @@ X19fXwM
                                 <include reference="7x9-6S-e3E"/>
                                 <include reference="I4N-eu-tRo"/>
                                 <include reference="8uH-G6-v5s"/>
-                                <include reference="2bN-AB-pf5"/>
                                 <include reference="Avo-oT-skv"/>
                                 <include reference="Jxl-T0-QU5"/>
                                 <include reference="0zR-k2-8lh"/>
@@ -524,6 +523,7 @@ X19fXwM
                                 <include reference="nGD-Pm-67W"/>
                                 <include reference="j6v-Fy-Bqb"/>
                                 <include reference="LgL-Wb-Mxp"/>
+                                <include reference="2bN-AB-pf5"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="AQ3-uD-1gI"/>
@@ -609,13 +609,11 @@ X19fXwM
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="item1Count" destination="AQH-bK-n7Q" id="jMS-dd-DGo"/>
-                        <outlet property="item2Clicked" destination="j6v-Fy-Bqb" id="o3k-ud-U8A"/>
-                        <outlet property="item2Count" destination="j6v-Fy-Bqb" id="XF8-5N-YWA"/>
-                        <outlet property="item3Clicked" destination="lyv-ke-LP0" id="pWN-gN-ti8"/>
-                        <outlet property="item3Count" destination="lyv-ke-LP0" id="Jck-ae-oEh"/>
-                        <outlet property="item4Count" destination="I4N-eu-tRo" id="Uwz-hF-4wH"/>
-                        <outlet property="item5Count" destination="LgL-Wb-Mxp" id="XDG-yL-ZOG"/>
+                        <outlet property="item1Value" destination="AQH-bK-n7Q" id="YuX-BP-bXD"/>
+                        <outlet property="item2Value" destination="j6v-Fy-Bqb" id="AZH-gp-pGu"/>
+                        <outlet property="item3Value" destination="lyv-ke-LP0" id="Fiv-8i-Tbd"/>
+                        <outlet property="item4Value" destination="I4N-eu-tRo" id="e3S-0S-cgN"/>
+                        <outlet property="item5Value" destination="LgL-Wb-Mxp" id="B2F-0i-QWY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

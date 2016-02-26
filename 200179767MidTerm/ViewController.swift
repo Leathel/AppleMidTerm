@@ -21,35 +21,33 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBOutlet weak var item1Count: UILabel!
-    @IBAction func incrementClicked(sender: UIStepper) {
+    @IBOutlet weak var item1Value: UILabel!
+    @IBOutlet weak var item2Value: UILabel!
+    @IBOutlet weak var item3Value: UILabel!
+    @IBOutlet weak var item4Value: UILabel!
+    @IBOutlet weak var item5Value: UILabel!
+    @IBAction func item1Increment(sender: UIStepper) {
         currentNumInt = Int32(sender.value)
-        item1Count.text = String(currentNumInt)
-        
-    }
-    
-    @IBOutlet weak var item2Count: UILabel!
-    @IBAction func increment2Clicked(sender: UIStepper) {
-        currentNumInt = Int32(sender.value)
-        item2Count.text = String(currentNumInt)
-    }
+        item1Value.text = String(currentNumInt)
 
-    @IBOutlet weak var item3Count: UILabel!
-    @IBAction func increment3clicked(sender: UIStepper) {
+    }
+    @IBAction func item2Increment(sender: UIStepper) {
         currentNumInt = Int32(sender.value)
-        item3Count.text = String(currentNumInt)
+        item2Value.text = String(currentNumInt)
+    }
+    @IBAction func item3Increment(sender: UIStepper) {
+        currentNumInt = Int32(sender.value)
+        item3Value.text = String(currentNumInt)
+    }
+    @IBAction func item4Increment(sender: UIStepper) {
+        currentNumInt = Int32(sender.value)
+        item4Value.text = String(currentNumInt)
+    }
+    @IBAction func item5Increment(sender: UIStepper) {
+        currentNumInt = Int32(sender.value)
+        item5Value.text = String(currentNumInt)
     }
     
-    @IBOutlet weak var item4Count: UILabel!
-    @IBAction func increment4Clicked(sender: UIStepper) {
-        currentNumInt = Int32(sender.value)
-        item4Count.text = String(currentNumInt)
-    }
     
-    @IBOutlet weak var item5Count: UILabel!
-    @IBAction func increment5Clicked(sender: UIStepper) {
-        currentNumInt = Int32(sender.value)
-        item5Count.text = String(currentNumInt)
-    }
 }
 
