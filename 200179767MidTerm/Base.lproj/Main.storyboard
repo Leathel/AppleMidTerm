@@ -119,12 +119,6 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="C2q-S5-cbl">
-                                <rect key="frame" x="-47" y="-14" width="94" height="29"/>
-                                <connections>
-                                    <action selector="item1Increment:" destination="BYZ-38-t0r" eventType="valueChanged" id="75r-wa-WNu"/>
-                                </connections>
-                            </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyv-ke-LP0">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -293,6 +287,17 @@ X19fXwM
                                     </mask>
                                 </variation>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGD-Pm-67W">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.67486092929999997" green="0.67486092929999997" blue="0.67486092929999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" red="0.81358373127032446" green="1" blue="0.50190445854500665" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="CancelClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fy2-ti-QZj"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6v-Fy-Bqb">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -305,17 +310,12 @@ X19fXwM
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGD-Pm-67W">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <color key="backgroundColor" red="0.67486092929999997" green="0.67486092929999997" blue="0.67486092929999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="Cancel">
-                                    <color key="titleShadowColor" red="0.81358373127032446" green="1" blue="0.50190445854500665" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="C2q-S5-cbl">
+                                <rect key="frame" x="-47" y="-14" width="94" height="29"/>
                                 <connections>
-                                    <action selector="CancelClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fy2-ti-QZj"/>
+                                    <action selector="item1Increment:" destination="BYZ-38-t0r" eventType="valueChanged" id="75r-wa-WNu"/>
                                 </connections>
-                            </button>
+                            </stepper>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -418,7 +418,6 @@ X19fXwM
                                 <exclude reference="zec-Vh-ief"/>
                                 <exclude reference="833-tq-ZJz"/>
                                 <exclude reference="AQH-bK-n7Q"/>
-                                <exclude reference="C2q-S5-cbl"/>
                                 <exclude reference="lyv-ke-LP0"/>
                                 <exclude reference="c97-Ia-SYz"/>
                                 <exclude reference="7x9-6S-e3E"/>
@@ -433,9 +432,10 @@ X19fXwM
                                 <exclude reference="etI-84-gyE"/>
                                 <exclude reference="n3I-P7-5qh"/>
                                 <exclude reference="ynO-C8-Icf"/>
+                                <exclude reference="nGD-Pm-67W"/>
                                 <exclude reference="j6v-Fy-Bqb"/>
                                 <exclude reference="LgL-Wb-Mxp"/>
-                                <exclude reference="nGD-Pm-67W"/>
+                                <exclude reference="C2q-S5-cbl"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="3Uq-i8-Tca"/>
@@ -538,7 +538,6 @@ X19fXwM
                                 <include reference="zec-Vh-ief"/>
                                 <include reference="833-tq-ZJz"/>
                                 <include reference="AQH-bK-n7Q"/>
-                                <include reference="C2q-S5-cbl"/>
                                 <include reference="lyv-ke-LP0"/>
                                 <include reference="c97-Ia-SYz"/>
                                 <include reference="7x9-6S-e3E"/>
@@ -553,9 +552,10 @@ X19fXwM
                                 <include reference="etI-84-gyE"/>
                                 <include reference="n3I-P7-5qh"/>
                                 <include reference="ynO-C8-Icf"/>
+                                <include reference="nGD-Pm-67W"/>
                                 <include reference="j6v-Fy-Bqb"/>
                                 <include reference="LgL-Wb-Mxp"/>
-                                <include reference="nGD-Pm-67W"/>
+                                <include reference="C2q-S5-cbl"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="3Uq-i8-Tca"/>

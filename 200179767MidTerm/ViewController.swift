@@ -12,6 +12,17 @@ class ViewController: UIViewController {
 
     var currentNumInt = Int32()
     override func viewDidLoad() {
+        //set the properties for the steppers
+        item1IncrementValue.autorepeat = true
+        item1IncrementValue.maximumValue = 999
+        item2IncrementValue.autorepeat = true
+        item2IncrementValue.maximumValue = 999
+        item3IncrementValue.autorepeat = true
+        item3IncrementValue.maximumValue = 999
+        item4IncrementValue.autorepeat = true
+        item4IncrementValue.maximumValue = 999
+        item5IncrementValue.autorepeat = true
+        item5IncrementValue.maximumValue = 999
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -20,7 +31,9 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
+    //Create all the outlets for everything
     @IBOutlet weak var item1Value: UILabel!
     @IBOutlet weak var item2Value: UILabel!
     @IBOutlet weak var item3Value: UILabel!
@@ -37,11 +50,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var item4TextBox: UITextField!
     @IBOutlet weak var item5TextBox: UITextField!
     
+    // when the increment buttons are clicked, take the value of the uiStepper and set the quantity to that
     @IBAction func item1Increment(sender: UIStepper) {
         currentNumInt = Int32(sender.value)
         item1Value.text = String(currentNumInt)
-    
-
     }
     @IBAction func item2Increment(sender: UIStepper) {
         currentNumInt = Int32(sender.value)
@@ -59,6 +71,7 @@ class ViewController: UIViewController {
         currentNumInt = Int32(sender.value)
         item5Value.text = String(currentNumInt)
     }
+    //When Cance is clicked set everything to 0 or blank so placeholders can be used
     @IBAction func CancelClicked(sender: UIButton) {
         item1Value.text = "0"
         item1IncrementValue.value = 0
